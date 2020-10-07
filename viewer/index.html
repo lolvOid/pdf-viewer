@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Viewer</title>
+    <link rel="stylesheet" href="viewer.css">
+    <link rel="stylesheet" href="../assets/css/icons.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.css">
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+ 
+</head>
+<body>
+    <div class="wrapper-page">
+        
+        
+
+      
+    
+        <div class="main-wrapper">
+            <div class="viewer">
+                    <canvas id="the-canvas" class="content-viewer"></canvas>
+                <div class="page-prev">
+                    <button class="btn btn-prev" id="prev"><i class="fas fa-chevron-left fa-2x"></i></button>                     
+                </div>
+                <div class="page-next">
+                    <button class="btn btn-next" id="next"><i class="fas fa-chevron-right fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+   
+        
+        <div class="footer">
+            <div class="d-flex  align-content-around flex-wrap ml-4 mb-0 ">
+                <div class="p-2 ">
+                    <a href=""><i class="mdi mdi-export mdi-36px text-white"></i></a>
+                </div>
+                <div class="p-2 ">
+                    <a href=""><i class="mdi mdi-fullscreen mdi-36px text-white"></i></a>
+                </div>
+
+                <div class="p-2 align-self-center">              
+                    <span>Page</span> <span id="page_num"></span> - <span id="page_count"></span>
+                </div>
+
+              
+                <div class="p-2 ">
+                    <a href=""><i class="mdi mdi-share mdi-36px text-white"></i></a>
+                </div>
+                <div class="p-2 ">
+                    <a href=""><i class="mdi mdi-dots-horizontal mdi-36px text-white"></i></a>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+      
+    
+
+    
+
+    
+    <script src="viewer.js"></script>
+        <!-- jQuery  -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/metisMenu.min.js"></script>
+    <script src="../assets/js/jquery.slimscroll.js"></script>
+    <script src="../assets/js/waves.min.js"></script>
+    <!-- App js -->
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

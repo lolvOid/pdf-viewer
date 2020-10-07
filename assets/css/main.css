@@ -1,0 +1,289 @@
+body {
+    
+    font-family: "Lato", sans-serif;
+  }
+
+
+  .Slabo{
+    font-family: 'Slabo 27px', serif;
+  }
+  
+  #navbar{
+      z-index: 50;
+      transition : 0.5s ease;
+  }
+
+  .sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #fafafa;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    transition: 0.1s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.1s;
+  }
+  
+  .sidenav a:hover {
+    text-decoration : none;
+    color: #008ee0;
+    transform:scale(1.1);
+    transition : ease 0.3s;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 800px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .iframe-container {
+    overflow: hidden;
+    /* // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+    padding-top: 56.25%;
+    position: relative;
+  }
+   
+  .iframe-container iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+  }
+
+  .footer{
+    transition:0.5s ease;
+  }
+
+  .page-prev{
+    
+    /* filter: blur(4px); */
+    left:0;
+    position:fixed;
+    top:50%;
+    
+  }
+
+  .page-next{
+   
+    right:0;
+    position:fixed;
+    top:50%;
+ 
+   
+  }
+
+  /* .page-prev .btn-prev{
+    height: 100%;
+    left: -100%;
+    text-align: center;
+    position: absolute;
+    transition: left 0.5s ease;
+    background-color: #f1f1f1;
+    opacity: 50%;
+  }
+
+  .page-next .btn-next{
+    height: 100%;
+    right: -100%;
+    text-align: center;
+    position: absolute;
+    transition: right 0.5s ease;
+    opacity: 50%;
+    background-color: #f1f1f1;
+  } */
+
+
+  .page-next:hover .btn-next{
+    background-color: #fafafa;
+  }
+
+  .page-prev:hover .btn-prev{
+    background-color: #fafafa;
+  }
+
+  .main-wrapper{
+    
+    height:100%;
+    position:relative;
+    width:auto;
+    margin:0 auto;
+  }
+  
+  .form-control{
+    background-color: #00000000 !important;
+  }
+
+  .content-viewer{
+
+    padding: 40px;
+    /* margin:40px; */
+    
+    display: block;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align:center;
+    overflow: auto;
+  }
+
+  .content-viewer canvas{
+    
+    padding-left: 15%;
+    padding-right: 15%;
+
+ 
+  }
+  .viewer{
+    
+    position: relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    
+  }
+
+  #sticky-footer {
+    flex-shrink: none;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color : #f8f9fa!important;
+    color: white;
+    text-align: center;
+    
+  }
+
+  .content-topbar{
+    position: relative;
+    top : 76px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border-color: #adadad;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+  }
+
+  .content-topbar a {
+    
+    text-decoration: none;
+    font-size: 13px;
+    color: #818181;
+    display: block;
+    transition: 0.1s;
+  }
+  
+  .content-topbar a:hover {
+    text-decoration : none;
+    color: #00629b4b;
+    transform:scale(1.1);
+    transition : ease 0.3s;
+  }
+  
+  .content-list{
+    top:100px;
+    overflow-y: scroll;
+    overflow-wrap: normal;
+    position: relative;
+  }
+
+
+  .tab-panel{
+    position: relative;
+    top:96px;
+  }
+  
+  .tab-panel-left{
+    margin-left: 100px;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .nav-link.active{
+    opacity: 100%;
+    background-color: #00000000 !important;
+  }
+
+  .nav-link{
+    opacity: 50%;
+  }
+  .img-thumbnail{
+    padding: 0 !important;
+    border: hidden !important;
+  }
+  
+
+  .nav-item.a{
+    width : 150px;
+    padding: 5px;
+    
+  }
+
+  .overaly-btn{
+    position: absolute;
+    left : 80%;
+    top: 5%;
+    
+  }
+
+  .overaly-btn ul{
+    
+    list-style: none;
+  }
+
+  .content-page-group{
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+
+  .thumb-view{
+    top:100px;
+    float: right;
+    width: 200px;
+    height: 400px;
+    background-color: ivory;
+    position: fixed;
+    display:block;
+  }
+
+  .img-fluid{
+    height: 180px !important;
+    object-fit: cover !important;
+    object-position: 20% 10px;
+  }
+
